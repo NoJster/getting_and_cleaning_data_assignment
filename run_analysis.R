@@ -31,16 +31,7 @@ interesting_cols <- sort(c(grep("std()", features$name), grep("mean()", features
 data_slice <- data[,c(1,2,interesting_cols)]
 
 ## build tidy frame
-
-# act <- group_by(data_slice[,-2], activity)
-# sub <- group_by(data_slice[,-1], subject)
-# act_summ <- summarize_all(act, mean)
-# sub_summ <- summarize_all(sub, mean)
-# names(act_summ)[1] <- "summary"
-# names(sub_summ)[1] <- "summary"
-# 
-# tidy_frame <- rbind(act_summ,sub_summ)
-
 tidy_frame <- group_by(data_slice, activity, subject) %>% summarize_all(funs(mean))
 ## write tidy frame to disk
+
 write.table(x = tidy_frame, file = "tidy_frame.txt", row.name = FALSE)
