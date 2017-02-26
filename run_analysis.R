@@ -43,4 +43,4 @@ data_slice <- data[,c(1,2,interesting_cols)]
 
 tidy_frame <- group_by(data_slice, activity, subject) %>% summarize_all(funs(mean))
 ## write tidy frame to disk
-write.table(x = tidy_frame, file = "tidy_frame.txt")
+write.table(x = tidy_frame, file = "tidy_frame.txt", row.name = FALSE)
