@@ -11,5 +11,5 @@ reasoning behind the result being tidy is that according to https://cran.r-proje
 - we have every observation in a row
 - we have that each type of observational unit forms a table
 
-== Codebook ==
+## Codebook
 In the uploaded Excel workbook, you'll find documentation for all the steps taken during the acquisition and analysis of the data as well as a description of the variables in the final submission
