@@ -12,4 +12,4 @@ reasoning behind the result being tidy is that according to https://cran.r-proje
 - we have that each type of observational unit forms a table
 
 ## Codebook
-In the uploaded Excel workbook, you'll find documentation for all the steps taken during the acquisition and analysis of the data as well as a description of the variables in the final submission
+In the file [CodeBook.md](CodeBook.md) in this repo, all transformations and updated to the data are explained. It also contains a table of all variables with their description.
